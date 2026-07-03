@@ -1,3 +1,7 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
 MACRO tt_um_tnt_gf_vco
   CLASS BLOCK ;
   FOREIGN tt_um_tnt_gf_vco ;
@@ -439,7 +443,8 @@ MACRO tt_um_tnt_gf_vco
     END
   END uo_out[7]
   PIN VGND
-    ANTENNADIFFAREA 37.766399 ;
+    DIRECTION INPUT ;
+    USE GROUND ;
     PORT
       LAYER Metal4 ;
         RECT 288.680 2.500 291.680 322.860 ;
@@ -450,7 +455,8 @@ MACRO tt_um_tnt_gf_vco
     END
   END VGND
   PIN VDPWR
-    ANTENNADIFFAREA 61.003197 ;
+    DIRECTION INPUT ;
+    USE POWER ;
     PORT
       LAYER Metal4 ;
         RECT 315.280 2.500 318.280 322.860 ;
